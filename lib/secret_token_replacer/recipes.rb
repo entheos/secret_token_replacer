@@ -19,5 +19,5 @@ Capistrano::Configuration.instance(true).load do
     end
   end
   
-  after "deploy:update", "deploy:symlink_secret"
+  after "deploy:update_code", "deploy:symlink_secret"
 end
